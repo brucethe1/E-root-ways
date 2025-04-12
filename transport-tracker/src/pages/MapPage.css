@@ -1,0 +1,65 @@
+.map-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .search-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-width: 350px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+  }
+  
+  .bus-marker {
+    background: transparent;
+    border: none;
+  }
+
+  /* Map container */
+.leaflet-container {
+  height: 100%;
+  background: #f5f5f5;
+}
+
+/* Route list sidebar */
+.route-list {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.route-card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Search form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
